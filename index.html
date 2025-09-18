@@ -7,8 +7,49 @@
     
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    
+    <!-- Header Section -->
+    <header>
+        <h1 class="text-3xl font-bold">Todo List</h1>
+    </header>
+    
+    <!-- Main Section -->
+    <main>
+        <form>
+            <input type="text" id="todo-input" placeholder="Add your task..." class="border border-gray-300 p-2 mb-2 w-full">
+            <input type="date" id="todo-date" class="border border-gray-300 p-2 mb-2 w-full">
+            <button type="button" onclick="addTodo()" class="bg-blue-500 text-white rounded p-2 mt-2 w-full">Add</button>
+        </form>
+
+        <!-- List of To-Dos -->
+        <section class="mt-6"
+        
+            <header>
+                <h2 class="text-2xl font-bold">Your To-Dos:</h2>
+            </header>
+
+        <ul class="mt-6" id="todo-list">
+            <li class="border-b border-gray-300 py-2 flex justify-between items-center">
+                <span>Sample Task 1</span>
+                <button class="bg-red-500 text-white p-1">Delete</button>
+            </li>
+            <li class="border-b border-gray-300 py-2 flex justify-between items-center">
+                <span>Sample Task 2</span>
+                <button getLatch="" class="bg-red-500 text-white p-1">Delete</button>
+            </li>
+        </ul>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Farrel Website</p>
+    </footer>
     
     <!-- JS External -->
     <script src="js/script.js"></script>
