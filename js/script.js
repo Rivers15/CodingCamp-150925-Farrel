@@ -28,8 +28,9 @@ function displayTodos() {
     /// Display all todos
     todos.forEach((todo, _) => {
         todoList.innerHTML += `
-            <li class="border-b border-gray-300 py-2">${todo.task} - <span
-                        class="text-sm text-gray-500">${todo.date}</span></li>
+            <li class="border-b border-gray-300 py-2 flex justify-between items-center">${todo.task}
+                <span class="text-sm text-gray-500">${todo.date}</span>
+            </li>
         `;
     });
 }
