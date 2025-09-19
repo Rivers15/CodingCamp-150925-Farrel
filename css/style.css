@@ -2,4 +2,91 @@ body {
     justify-items: center;
     min-height: 100vh;
     align-content: center;
+    background-color: antiquewhite;
+}
+
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+#todo-input, #todo-date {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#addBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+hr {
+    margin: 5px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+#subtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+
+#deleteAllBtn {
+    margin-top: 0px;
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #666;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-do List | Mini Coding Project</title>
     
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
@@ -15,40 +15,58 @@
     
     <!-- Header Section -->
     <header>
-        <h1 class="text-3xl font-bold">Todo List</h1>
+      <h1 id="title">To-do List</h1>
     </header>
-    
+  </br>
     <!-- Main Section -->
     <main>
-        <form>
-            <input type="text" id="todo-input" placeholder="Add your task..." class="border border-gray-300 p-2 mb-2 w-full">
-            <input type="date" id="todo-date" class="border border-gray-300 p-2 mb-2 w-full">
-            <button type="button" onclick="addTodo()" class="bg-blue-500 text-white rounded p-2 mt-2 w-full">Add</button>
+      <div id="container">
+        <form id="todo-form" class="flex flex-col max-w-md mx-auto">
+            <input type="text" id="todo-input" placeholder="Add your task...">
+            <input type="date" id="todo-date">
+            <button type="button" id="addBtn">Add</button>
         </form>
+        </br>
+        <hr>
+        <h2 id="subtitle">Your List</h2>
+        <!-- Filter -->
+        <div class="mt-3">
+          <label for="filter" class="mr-2">Filter:</label>
+          <select id="filter" class="px-2 py-1 rounded text-black">
+          <option value="all">All</option>
+          <option value="pending">Pending</option>
+          <option value="finished">Finished</option>
+          </select>
+        </div>
 
-        <!-- List of To-Dos -->
-        <section class="mt-6"
-        
-            <header>
-                <h2 class="text-2xl font-bold">Your To-Dos:</h2>
-            </header>
+        <!-- Delete All -->
+        <div class="mt-3">
+          <button id="deleteAllBtn">Delete All</button>
+        </div>
 
-        <ul class="mt-6" id="todo-list">
-            <li class="border-b border-gray-300 py-2 flex justify-between items-center">
-                <span>Sample Task 1</span>
-                <button class="bg-red-500 text-white p-1">Delete</button>
-            </li>
-            <li class="border-b border-gray-300 py-2 flex justify-between items-center">
-                <span>Sample Task 2</span>
-                <button class="bg-red-500 text-white p-1">Delete</button>
-            </li>
-        </ul>
-        </section>
-    </main>
+        <!-- Tabel Todo -->
+        <div>
+          <table class="min-w-full bg-white border border-gray-300 mt-4">
+            <thead>
+              <tr>
+              <th class="align-left">Task</th>
+              <th class="align-left">Due Date</th>
+              <th class="align-left">Status</th>
+              <th class="align-left">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="list-container">
+              <!-- List items will be dynamically added here -->
+            </tbody>
+          </table>
+        </div>
+       </div>
+      </main>
+    
     
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Farrel Website</p>
+        <p>&copy;2025 | Farrel Rakha</p>
     </footer>
     
     <!-- JS External -->
