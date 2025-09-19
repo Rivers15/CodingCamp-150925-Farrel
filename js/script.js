@@ -30,13 +30,15 @@ function displayTodos() {
         todoList.innerHTML += `
             <li class="border-b border-gray-300 py-2 flex justify-between items-center">${todo.task}
                 <span class="text-sm text-gray-500">${todo.date}</span>
-            </li>
+            </li>            
         `;
     });
 }
 
-/// Mandate functions for future development
-function deleteTodo() { }
+/// delete fucntion
+const deleteBtn = todoList.querySelector(".delete-btn");
+function deleteTodo() {
+}
 
 /// Mandate functions for future development
 function filterTodo() { }
