@@ -63,6 +63,7 @@ hr {
     border: none;
     border-radius: 4px;
     font-size: 14px;
+    float: right;
 }
 
 table {
@@ -71,7 +72,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     padding: 8px;
     text-align: left;
 }

@@ -33,26 +33,25 @@
         <div class="mt-3">
           <label for="filter" class="mr-2">Filter:</label>
           <select id="filter" class="px-2 py-1 rounded text-black">
-          <option value="all">All</option>
-          <option value="pending">Pending</option>
-          <option value="finished">Finished</option>
+            <option value="all">All</option>
+            <option value="pending">Pending</option>
+            <option value="finished">Finished</option>
           </select>
-        </div>
-
         <!-- Delete All -->
-        <div class="mt-3">
-          <button id="deleteAllBtn">Delete All</button>
+          <span class="mt-3">
+            <button id="deleteAllBtn">Delete All</button>
+          </span>
         </div>
 
-        <!-- Tabel Todo -->
+        <!-- Todo Table -->
         <div>
           <table class="min-w-full bg-white border border-gray-300 mt-4">
             <thead>
               <tr>
-              <th class="align-left">Task</th>
-              <th class="align-left">Due Date</th>
-              <th class="align-left">Status</th>
-              <th class="align-left">Actions</th>
+              <th>Task</th>
+              <th>Due Date</th>
+              <th>Status</th>
+              <th>Actions</th>
               </tr>
             </thead>
             <tbody id="list-container">
